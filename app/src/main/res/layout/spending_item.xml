@@ -7,15 +7,14 @@
     tools:context=".ui.MainActivity">
 
     <TextView
-        android:id="@+id/reminder_date"
+        android:id="@+id/spending_date"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="@color/light_grey"
         android:gravity="center"
         tools:text="DATE" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_view_reminder"
+        android:id="@+id/card_view_spending"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
