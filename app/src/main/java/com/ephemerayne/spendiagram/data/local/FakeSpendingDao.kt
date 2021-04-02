@@ -1,36 +1,52 @@
-package com.ephemerayne.spendiagram.data
+package com.ephemerayne.spendiagram.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.ephemerayne.spendiagram.domain.entity.Category
 import com.ephemerayne.spendiagram.domain.entity.Spending
-import com.ephemerayne.spendiagram.domain.main.MainRepository
 import org.threeten.bp.LocalDateTime
+import javax.inject.Inject
 
-class FakeMainRepository : MainRepository {
+class FakeSpendingDao @Inject constructor(): SpendingDao {
 
-    override fun getSpendings(): LiveData<List<Spending>> {
+    override fun insertSpending(spending: Spending) {
+
+    }
+
+    override fun getSpending(id: Int): LiveData<Spending> {
+       return MutableLiveData()
+    }
+
+    override fun getAllSpendings(): LiveData<List<Spending>> {
         return MutableLiveData<List<Spending>>().apply {
             value = listOf(
                 Spending(
-                    category = Category(0, "АОЛПОПО", 0),
-                    description = "ПРОЛД",
+                    category = Category(0, "FakeSpendingDao: АОЛПОПО", 0),
+                    description = "FakeSpendingDao: ПРОЛД",
                     sum = 2345.0,
                     dateTime = LocalDateTime.now()
                 ),
                 Spending(
                     category = Category(1, "2", 0),
-                    description = "aafdfgdfgdfga",
+                    description = "FakeSpendingDao: aafdfgdfgdfga",
                     sum = 2345.0,
                     dateTime = LocalDateTime.now()
                 ),
                 Spending(
                     category = Category(2, "3", 0),
-                    description = "erere",
+                    description = "FakeSpendingDao: erere",
                     sum = 2345.0,
                     dateTime = LocalDateTime.now()
                 ),
             )
         }
+    }
+
+    override fun deleteSpending(id: Int) {
+
+    }
+
+    override fun updateSpending(spending: Spending) {
+
     }
 }

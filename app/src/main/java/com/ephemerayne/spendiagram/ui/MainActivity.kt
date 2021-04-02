@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         binding.spendingRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.spendingRecyclerView.adapter = adapter
 
-        activityViewModel.testLiveData.observe(this@MainActivity) {
+        activityViewModel.getSpendings().observe(this@MainActivity) {
             adapter.setSpendings(spendings = it)
 
         }
