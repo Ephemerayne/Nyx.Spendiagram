@@ -1,4 +1,4 @@
-package com.ephemerayne.spendiagram.adapter
+package com.ephemerayne.spendiagram.ui.adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

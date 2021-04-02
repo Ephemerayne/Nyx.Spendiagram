@@ -1,8 +1,8 @@
 package com.ephemerayne.spendiagram.di
 
 import androidx.lifecycle.ViewModel
+import com.ephemerayne.spendiagram.domain.addspending.AddSpendingDialogViewModel
 import com.ephemerayne.spendiagram.domain.main.MainActivityViewModel
-import com.ephemerayne.spendiagram.ui.dialogSheet.AddSpendingDialogViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -18,5 +18,5 @@ abstract class ViewModelsModule {
     @Binds
     @IntoMap
     @ViewModelKey(AddSpendingDialogViewModel::class)
-    abstract fun addSpendingDialogViewModel(viewModel:AddSpendingDialogViewModel): ViewModel
+    abstract fun addSpendingDialogViewModel(viewModel: AddSpendingDialogViewModel): ViewModel
 }

@@ -6,9 +6,9 @@ import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ephemerayne.spendiagram.App
-import com.ephemerayne.spendiagram.adapter.SpendingAdapter
 import com.ephemerayne.spendiagram.databinding.ActivityMainBinding
 import com.ephemerayne.spendiagram.domain.main.MainActivityViewModel
+import com.ephemerayne.spendiagram.ui.adapter.SpendingAdapter
 import com.ephemerayne.spendiagram.ui.dialogSheet.AddSpendingDialog
 import javax.inject.Inject
 

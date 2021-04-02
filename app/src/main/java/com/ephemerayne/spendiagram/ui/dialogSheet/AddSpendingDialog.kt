@@ -8,6 +8,7 @@ import androidx.fragment.app.DialogFragment
 import com.ephemerayne.spendiagram.App
 import com.ephemerayne.spendiagram.R
 import com.ephemerayne.spendiagram.databinding.AddSpendingDialogBinding
+import com.ephemerayne.spendiagram.domain.addspending.AddSpendingDialogViewModel
 import javax.inject.Inject
 
 

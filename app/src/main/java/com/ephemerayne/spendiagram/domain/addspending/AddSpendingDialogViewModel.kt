@@ -1,4 +1,4 @@
-package com.ephemerayne.spendiagram.ui.dialogSheet
+package com.ephemerayne.spendiagram.domain.addspending
 
 import androidx.lifecycle.ViewModel
 import javax.inject.Inject
