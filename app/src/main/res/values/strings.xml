@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Nyx.Spendiagram</string>
+
+    <string-array name="categories">
+        <item>Категория 1</item>
+        <item>Категория 2</item>
+        <item>Категория 3</item>
+        <item>Категория 4</item>
+        <item>Категория 5</item>
+        <item>Категория 6</item>
+        <item>Категория 7</item>
+        <item>Категория 8</item>
+        <item>Категория 9</item>
+        <item>Категория 10</item>
+    </string-array>
 </resources>
