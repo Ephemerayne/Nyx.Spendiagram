@@ -2,8 +2,8 @@ package com.ephemerayne.spendiagram
 
 import android.app.Application
 import com.ephemerayne.spendiagram.di.AppComponent
-import com.ephemerayne.spendiagram.di.AppModule
 import com.ephemerayne.spendiagram.di.DaggerAppComponent
+import com.ephemerayne.spendiagram.di.modules.AppModule
 import com.jakewharton.threetenabp.AndroidThreeTen
 
 class App: Application() {

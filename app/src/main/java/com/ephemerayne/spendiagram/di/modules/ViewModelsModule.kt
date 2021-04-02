@@ -1,6 +1,7 @@
-package com.ephemerayne.spendiagram.di
+package com.ephemerayne.spendiagram.di.modules
 
 import androidx.lifecycle.ViewModel
+import com.ephemerayne.spendiagram.di.ViewModelKey
 import com.ephemerayne.spendiagram.domain.addspending.AddSpendingDialogViewModel
 import com.ephemerayne.spendiagram.domain.main.MainActivityViewModel
 import dagger.Binds

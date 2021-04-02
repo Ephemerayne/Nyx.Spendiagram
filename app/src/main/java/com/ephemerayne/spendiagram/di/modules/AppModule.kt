@@ -1,4 +1,4 @@
-package com.ephemerayne.spendiagram.di
+package com.ephemerayne.spendiagram.di.modules
 
 import android.app.Application
 import dagger.Module
