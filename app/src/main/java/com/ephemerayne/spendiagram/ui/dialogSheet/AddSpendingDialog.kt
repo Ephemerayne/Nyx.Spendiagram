@@ -2,14 +2,18 @@ package com.ephemerayne.spendiagram.ui.dialogSheet
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.ephemerayne.spendiagram.App
 import com.ephemerayne.spendiagram.R
 import com.ephemerayne.spendiagram.databinding.AddSpendingDialogBinding
+import javax.inject.Inject
 
 
 class AddSpendingDialog : DialogFragment(R.layout.add_spending_dialog) {
 
+    @Inject
     lateinit var viewModel: AddSpendingDialogViewModel
 
     private lateinit var binding: AddSpendingDialogBinding
@@ -19,5 +23,10 @@ class AddSpendingDialog : DialogFragment(R.layout.add_spending_dialog) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ) = AddSpendingDialogBinding.inflate(inflater).also { binding = it }.root
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        (activity?.application as App).appComponent.inject(this)
+    }
 }
 

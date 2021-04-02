@@ -5,8 +5,9 @@ import androidx.lifecycle.ViewModel
 import com.ephemerayne.spendiagram.domain.entity.Category
 import com.ephemerayne.spendiagram.domain.entity.Spending
 import org.threeten.bp.LocalDateTime
+import javax.inject.Inject
 
-class MainActivityViewModel: ViewModel() {
+class MainActivityViewModel @Inject constructor(): ViewModel() {
     val testLiveData = MutableLiveData<List<Spending>>().apply {
         value = listOf(
             Spending(

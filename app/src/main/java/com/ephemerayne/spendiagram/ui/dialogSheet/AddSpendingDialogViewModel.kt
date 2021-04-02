@@ -1,4 +1,7 @@
 package com.ephemerayne.spendiagram.ui.dialogSheet
 
-class AddSpendingDialogViewModel {
+import androidx.lifecycle.ViewModel
+import javax.inject.Inject
+
+class AddSpendingDialogViewModel @Inject constructor() : ViewModel() {
 }
