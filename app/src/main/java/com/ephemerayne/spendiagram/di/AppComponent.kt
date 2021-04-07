@@ -1,19 +1,17 @@
 package com.ephemerayne.spendiagram.di
 
-import com.ephemerayne.spendiagram.di.modules.AppModule
-import com.ephemerayne.spendiagram.di.modules.FakeSpendingDaoModule
-import com.ephemerayne.spendiagram.di.modules.MainRepositoryModule
-import com.ephemerayne.spendiagram.di.modules.ViewModelsModule
+import com.ephemerayne.spendiagram.di.modules.*
 import com.ephemerayne.spendiagram.ui.MainActivity
-import com.ephemerayne.spendiagram.ui.dialogSheet.AddSpendingDialog
+import com.ephemerayne.spendiagram.ui.addspending.AddSpendingDialog
 import dagger.Component
 
 @Component(
     modules = [
         AppModule::class,
+        AppDatabaseModule::class,
         ViewModelsModule::class,
         MainRepositoryModule::class,
-        FakeSpendingDaoModule::class
+        SpendingDaoModule::class
     ]
 )
 

@@ -9,7 +9,7 @@ import com.ephemerayne.spendiagram.App
 import com.ephemerayne.spendiagram.databinding.ActivityMainBinding
 import com.ephemerayne.spendiagram.domain.main.MainActivityViewModel
 import com.ephemerayne.spendiagram.ui.adapter.SpendingAdapter
-import com.ephemerayne.spendiagram.ui.dialogSheet.AddSpendingDialog
+import com.ephemerayne.spendiagram.ui.addspending.AddSpendingDialog
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {

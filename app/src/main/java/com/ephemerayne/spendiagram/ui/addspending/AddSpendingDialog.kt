@@ -1,4 +1,4 @@
-package com.ephemerayne.spendiagram.ui.dialogSheet
+package com.ephemerayne.spendiagram.ui.addspending
 
 import android.os.Bundle
 import android.view.LayoutInflater
